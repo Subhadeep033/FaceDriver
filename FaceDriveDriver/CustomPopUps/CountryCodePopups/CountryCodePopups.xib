@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="CountryCodePopups" customModule="FaceDriveDriver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivz-KB-pQI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cl0-nW-nso">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlE-i1-WTy">
+                            <rect key="frame" x="57" y="174" width="300" height="388"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yau-AR-F36">
+                                    <rect key="frame" x="15" y="100" width="270" height="268"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="separatorColor" red="0.13725490200000001" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                </tableView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Country" textAlignment="natural" minimumFontSize="17" background="signInTextField" translatesAutoresizingMaskIntoConstraints="NO" id="QTb-zz-VBh">
+                                    <rect key="frame" x="15" y="58" width="270" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="6Yg-ne-nYH"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Country List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbo-Vt-GNe">
+                                    <rect key="frame" x="95" y="25" width="110" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="6RE-xp-GHr"/>
+                                        <constraint firstAttribute="width" constant="110" id="pRL-mI-Qpr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                    <color key="textColor" red="0.13725490200000001" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="QTb-zz-VBh" secondAttribute="trailing" constant="15" id="0bm-fH-fmB"/>
+                                <constraint firstAttribute="trailing" secondItem="yau-AR-F36" secondAttribute="trailing" constant="15" id="0vM-Ms-t5j"/>
+                                <constraint firstItem="QTb-zz-VBh" firstAttribute="leading" secondItem="PlE-i1-WTy" secondAttribute="leading" constant="15" id="Lm7-ou-iVH"/>
+                                <constraint firstItem="gbo-Vt-GNe" firstAttribute="top" secondItem="PlE-i1-WTy" secondAttribute="top" constant="25" id="ML2-hq-GEy"/>
+                                <constraint firstItem="gbo-Vt-GNe" firstAttribute="centerX" secondItem="PlE-i1-WTy" secondAttribute="centerX" id="Mqz-p7-1Kd"/>
+                                <constraint firstAttribute="height" constant="388" id="TRy-fO-Qma"/>
+                                <constraint firstItem="QTb-zz-VBh" firstAttribute="top" secondItem="gbo-Vt-GNe" secondAttribute="bottom" constant="8" id="Wjp-vK-s5E"/>
+                                <constraint firstAttribute="width" constant="300" id="hlg-1h-lm7"/>
+                                <constraint firstItem="yau-AR-F36" firstAttribute="leading" secondItem="PlE-i1-WTy" secondAttribute="leading" constant="15" id="p4M-dW-t65"/>
+                                <constraint firstItem="yau-AR-F36" firstAttribute="top" secondItem="QTb-zz-VBh" secondAttribute="bottom" constant="8" id="wSM-qy-3fr"/>
+                                <constraint firstAttribute="bottom" secondItem="yau-AR-F36" secondAttribute="bottom" constant="20" id="xhZ-AD-hKT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cl0-nW-nso" firstAttribute="top" secondItem="ivz-KB-pQI" secondAttribute="top" id="22p-od-4eh"/>
+                        <constraint firstAttribute="bottom" secondItem="cl0-nW-nso" secondAttribute="bottom" id="7mK-By-sfF"/>
+                        <constraint firstItem="cl0-nW-nso" firstAttribute="leading" secondItem="ivz-KB-pQI" secondAttribute="leading" id="NCB-sq-KLp"/>
+                        <constraint firstItem="PlE-i1-WTy" firstAttribute="centerY" secondItem="ivz-KB-pQI" secondAttribute="centerY" id="cA0-ve-h28"/>
+                        <constraint firstAttribute="trailing" secondItem="cl0-nW-nso" secondAttribute="trailing" id="or1-uG-1Rc"/>
+                        <constraint firstItem="PlE-i1-WTy" firstAttribute="centerX" secondItem="ivz-KB-pQI" secondAttribute="centerX" id="ulT-ss-5XF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ivz-KB-pQI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TmM-Uj-VdG"/>
+                <constraint firstItem="ivz-KB-pQI" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="fqF-Un-neH"/>
+                <constraint firstItem="ivz-KB-pQI" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="mvt-Pz-Ypj"/>
+                <constraint firstItem="ivz-KB-pQI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vR2-W8-WfB"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundView" destination="ivz-KB-pQI" id="CpS-lp-bwd"/>
+                <outlet property="countryListTableView" destination="yau-AR-F36" id="QAO-bA-xjh"/>
+                <outlet property="dialogView" destination="PlE-i1-WTy" id="1A9-yg-Uny"/>
+                <outlet property="searchCountryTextField" destination="QTb-zz-VBh" id="NcK-mm-wPG"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="48.913043478260875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="signInTextField" width="267" height="28"/>
+    </resources>
+</document>

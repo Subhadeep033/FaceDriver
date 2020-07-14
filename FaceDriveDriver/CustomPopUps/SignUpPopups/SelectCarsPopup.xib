@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectCarsPopup" customModule="FaceDriveDriver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJv-Du-OV8">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oaz-4k-2VB">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gee-Vo-IQs">
+                            <rect key="frame" x="20" y="255" width="334" height="226"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="signInArea" translatesAutoresizingMaskIntoConstraints="NO" id="2GN-bv-rit">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="226"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Number Of Passanger Seat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYj-rS-EaA">
+                                    <rect key="frame" x="20" y="30" width="294" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="bJg-Dn-k1J"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                    <color key="textColor" red="0.13725490200000001" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J79-ra-uF9">
+                                    <rect key="frame" x="15" y="65" width="304" height="141"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="separatorColor" red="0.13725490200000001" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="iN0-l3-epB" id="Y2K-Fk-L7j"/>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="fdl-IZ-uLL"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="2GN-bv-rit" secondAttribute="trailing" id="5aL-xR-iAp"/>
+                                <constraint firstAttribute="bottom" secondItem="J79-ra-uF9" secondAttribute="bottom" constant="20" id="7aX-cT-4KI"/>
+                                <constraint firstItem="J79-ra-uF9" firstAttribute="trailing" secondItem="2GN-bv-rit" secondAttribute="trailing" constant="-15" id="FAi-D9-wLE"/>
+                                <constraint firstItem="J79-ra-uF9" firstAttribute="top" secondItem="LYj-rS-EaA" secondAttribute="bottom" constant="10" id="GLr-Sn-rSd"/>
+                                <constraint firstItem="2GN-bv-rit" firstAttribute="top" secondItem="Gee-Vo-IQs" secondAttribute="top" id="Mef-nD-joL"/>
+                                <constraint firstItem="LYj-rS-EaA" firstAttribute="leading" secondItem="Gee-Vo-IQs" secondAttribute="leading" constant="20" id="Q2f-TZ-b5b"/>
+                                <constraint firstItem="LYj-rS-EaA" firstAttribute="top" secondItem="Gee-Vo-IQs" secondAttribute="top" constant="30" id="QoS-CR-ut3"/>
+                                <constraint firstAttribute="trailing" secondItem="J79-ra-uF9" secondAttribute="trailing" constant="15" id="ZcH-VC-mEW"/>
+                                <constraint firstItem="J79-ra-uF9" firstAttribute="leading" secondItem="Gee-Vo-IQs" secondAttribute="leading" constant="15" id="cfy-9d-1PR"/>
+                                <constraint firstAttribute="bottom" secondItem="2GN-bv-rit" secondAttribute="bottom" id="g1z-iu-EH9"/>
+                                <constraint firstAttribute="trailing" secondItem="LYj-rS-EaA" secondAttribute="trailing" constant="20" id="j2F-7m-n2G"/>
+                                <constraint firstAttribute="height" constant="226" id="nfK-B3-4xx"/>
+                                <constraint firstItem="2GN-bv-rit" firstAttribute="leading" secondItem="Gee-Vo-IQs" secondAttribute="leading" id="tco-wU-0kz"/>
+                                <constraint firstItem="J79-ra-uF9" firstAttribute="bottom" secondItem="2GN-bv-rit" secondAttribute="bottom" constant="-20" id="vkI-a6-4Tv"/>
+                                <constraint firstItem="2GN-bv-rit" firstAttribute="centerY" secondItem="Gee-Vo-IQs" secondAttribute="centerY" id="vmq-sC-XL0"/>
+                                <constraint firstItem="J79-ra-uF9" firstAttribute="leading" secondItem="2GN-bv-rit" secondAttribute="leading" constant="15" id="y0V-C7-BvY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Gee-Vo-IQs" firstAttribute="centerY" secondItem="AJv-Du-OV8" secondAttribute="centerY" id="FQS-DV-4Io"/>
+                        <constraint firstAttribute="bottom" secondItem="oaz-4k-2VB" secondAttribute="bottom" id="Lgp-WX-feL"/>
+                        <constraint firstAttribute="trailing" secondItem="Gee-Vo-IQs" secondAttribute="trailing" constant="60" id="TFR-kV-pup"/>
+                        <constraint firstAttribute="trailing" secondItem="oaz-4k-2VB" secondAttribute="trailing" id="Vxe-oF-ObQ"/>
+                        <constraint firstItem="Gee-Vo-IQs" firstAttribute="leading" secondItem="AJv-Du-OV8" secondAttribute="leading" constant="20" id="fnk-Dj-DTU"/>
+                        <constraint firstItem="oaz-4k-2VB" firstAttribute="leading" secondItem="AJv-Du-OV8" secondAttribute="leading" id="goA-Gi-6hY"/>
+                        <constraint firstItem="oaz-4k-2VB" firstAttribute="top" secondItem="AJv-Du-OV8" secondAttribute="top" id="idl-Gz-yc2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AJv-Du-OV8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KNs-VM-H71"/>
+                <constraint firstItem="AJv-Du-OV8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UAr-Le-YfX"/>
+                <constraint firstAttribute="trailing" secondItem="AJv-Du-OV8" secondAttribute="trailing" id="X2z-Wb-5uT"/>
+                <constraint firstAttribute="bottom" secondItem="AJv-Du-OV8" secondAttribute="bottom" id="wPn-Q1-IXY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AMw-lL-cWP"/>
+            <connections>
+                <outlet property="backgroundView" destination="AJv-Du-OV8" id="ofL-Cx-Ww3"/>
+                <outlet property="dialogView" destination="Gee-Vo-IQs" id="6YT-QH-T3J"/>
+                <outlet property="headerLabel" destination="LYj-rS-EaA" id="Kdv-JM-rMN"/>
+                <outlet property="popupTableView" destination="J79-ra-uF9" id="lBD-RJ-8N7"/>
+                <outlet property="popupViewHeightConstraints" destination="nfK-B3-4xx" id="nC9-R5-nic"/>
+                <outlet property="selectCarPopupsTrailingConstraints" destination="TFR-kV-pup" id="O5G-EX-tkp"/>
+            </connections>
+            <point key="canvasLocation" x="200.00000000000003" y="88.858695652173921"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="signInArea" width="328" height="226"/>
+    </resources>
+</document>

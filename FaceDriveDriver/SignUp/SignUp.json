@@ -1,0 +1,47 @@
+[   {   "cellType"    : "1",
+        "id"    : "firstname",
+        "text" : "",
+        "placeholder" : "First Name",
+    },
+    {
+        "cellType"    : "1",
+        "id"    : "lastname",
+        "text" : "",
+        "placeholder" : "Last Name",
+    },
+    {
+        "cellType"    : "1",
+        "id"    : "email",
+        "text" : "",
+        "placeholder" : "Email",
+    },
+    {
+        "cellType"    : "3",
+        "id"    : "password",
+        "text" : "",
+        "placeholder" : "Password",
+    },
+    {
+        "cellType"    : "2",
+        "id"    : "country",
+        "text" : "",
+        "selectedid" : "",
+        "tag" : 0,
+        "placeholder" : "Select Country"
+    },
+    {
+        "cellType"    : "2",
+        "id"    : "state",
+        "text" : "",
+        "selectedid" : "",
+        "tag" : 1,
+        "placeholder" : "State/Province",
+    },
+    {
+        "cellType"    : "1",
+        "id"    : "city",
+        "text" : "",
+        "placeholder" : "City",
+    }
+]
+ 

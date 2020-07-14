@@ -1,0 +1,21 @@
+[
+    {
+        "cellType"    : "4",
+        "id"    : "insuranceImage",
+        "imgurl" : "",
+        "placeholder" : "Upload Vehicle Insurance",
+    },
+    {
+        "cellType"    : "4",
+        "id"    : "registrationImage",
+        "imgurl" : "",
+        "placeholder" : "Upload Vehicle Registration",
+    },
+    {
+        "cellType"    : "4",
+        "id"    : "inspectionImage",
+        "imgurl" : "",
+        "placeholder" : "Upload Photo of Vehicle Inspection",
+    }
+]
+

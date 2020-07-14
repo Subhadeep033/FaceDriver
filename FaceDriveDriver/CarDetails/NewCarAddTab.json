@@ -1,0 +1,38 @@
+[
+    {
+        "cellType"    : "1",
+        "id"    : "info",
+        "counter" : "",
+        "placeholder" : "Info",
+        "isSelected" : "true"
+    },
+    {
+        "cellType"    : "1",
+        "id"    : "cardetails",
+        "counter" : "",
+        "placeholder" : "Car Info",
+        "isSelected" : "false"
+    },
+    {
+        "cellType"    : "1",
+        "id"    : "document",
+        "counter" : "",
+        "placeholder" : "Documents",
+        "isSelected" : "false"
+    },
+    {
+        "cellType"    : "1",
+        "id"    : "profile",
+        "counter" : "",
+        "placeholder" : "Profile",
+        "isSelected" : "false"
+    },
+    {
+        "cellType"    : "1",
+        "id"    : "status",
+        "counter" : "",
+        "placeholder" : "Status",
+        "isSelected" : "false"
+    }
+]
+ 
